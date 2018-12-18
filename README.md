@@ -25,6 +25,7 @@ https://nlp.stanford.edu/projects/glove/
 
 # RNN Architecture:
 
+
 1) Sequential() : Initialize RNN.
 
 2) Add 4 layers, with 100 units in each layer
@@ -38,6 +39,8 @@ https://nlp.stanford.edu/projects/glove/
 ![1](https://user-images.githubusercontent.com/30834801/50140682-969d0400-02cb-11e9-8a15-5f4eb7bb1c29.PNG)
 
 # Training Model
+
+
 ![2](https://user-images.githubusercontent.com/30834801/50140733-be8c6780-02cb-11e9-97f1-2b5715155b80.PNG)
 
 
