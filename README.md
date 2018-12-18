@@ -16,6 +16,7 @@ Count-based models learn vectors by doing dimensionality reduction on a co-occur
 In the case of GloVe, the counts matrix is preprocessed by normalizing the counts and log-smoothing them. Compared to word2vec, GloVe allows for parallel implementation, which means that it’s easier to train over more data. It is believed (GloVe) to combine the benefits of the word2vec skip-gram model in the word analogy tasks, with those of matrix factorization methods exploiting global statistical information.
 
 Reference:
+
 https://www.kdnuggets.com/2018/08/word-vectors-nlp-glove.html
 
 https://nlp.stanford.edu/projects/glove/
