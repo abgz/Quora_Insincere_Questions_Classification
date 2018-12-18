@@ -22,6 +22,12 @@ In this competition, Kagglers will develop models that identify and flag insince
 
 5) input_shape : Shape of x_train, but here we need not to give 3D shape, only shape corresponding to timestamps(2nd) and indicators(3rd) are needed. Shape corresponding to observation(1st) will automatically taken into account.
 
+![1](https://user-images.githubusercontent.com/30834801/50140682-969d0400-02cb-11e9-8a15-5f4eb7bb1c29.PNG)
+
+# Training Model
+![2](https://user-images.githubusercontent.com/30834801/50140733-be8c6780-02cb-11e9-97f1-2b5715155b80.PNG)
+
+
 # Save model:
 In case you dont want to train model again you use saved model.To do so download model.json and model.h5 is same folder, recompile and run it.
 After compilation is will be ready for prediction.
