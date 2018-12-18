@@ -8,6 +8,17 @@ Quora is a platform that empowers people to learn from each other. On Quora, peo
 
 In this competition, Kagglers will develop models that identify and flag insincere questions. To date, Quora has employed both machine learning and manual review to address this problem. With your help, they can develop more scalable methods to detect toxic and misleading content.
 
+# Word Embedding using Glove : Dictionary of word and its coefficients
+GlobalVectors (GloVe) is a model that learns vectors or words from their co-occurrence information. GloVe is a count-based model. This model that learns vectors or words from their co-occurrence information, i.e. how frequently they appear together in large text corpora, is GlobalVectors (GloVe).
+
+Count-based models learn vectors by doing dimensionality reduction on a co-occurrence counts matrix. First they construct a large matrix of co-occurrence information, which contains the information on how frequently each “word” (stored in rows), is seen in some “context” (the columns). The number of “contexts” needs be large, since it is essentially combinatorial in size. Afterwards they factorize this matrix to yield a lower-dimensional matrix of words and features, where each row yields a vector representation for each word. It is achieved by minimizing a “reconstruction loss” which looks for lower-dimensional representations that can explain the variance in the high-dimensional data.
+
+In the case of GloVe, the counts matrix is preprocessed by normalizing the counts and log-smoothing them. Compared to word2vec, GloVe allows for parallel implementation, which means that it’s easier to train over more data. It is believed (GloVe) to combine the benefits of the word2vec skip-gram model in the word analogy tasks, with those of matrix factorization methods exploiting global statistical information.
+
+Reference:
+https://www.kdnuggets.com/2018/08/word-vectors-nlp-glove.html
+https://nlp.stanford.edu/projects/glove/
+
 # Build LSTM model to predict insincer questions classification using keras
 
 # RNN Architecture:
@@ -35,3 +46,6 @@ After compilation is will be ready for prediction.
 Keras provides the ability to describe any model using JSON format with a to_json() function. This can be saved to file and later loaded via the model_from_json() function that will create a new model from the JSON specification.
 The weights are saved directly from the model using the save_weights() function and later loaded using the symmetrical load_weights() function.
 The model is then converted to JSON format and written to model.json in the local directory. The network weights are written to model.h5 in the local directory
+
+# Prediction
+Prediction of model is present in Output.csv file
