@@ -17,6 +17,7 @@ In the case of GloVe, the counts matrix is preprocessed by normalizing the count
 
 Reference:
 https://www.kdnuggets.com/2018/08/word-vectors-nlp-glove.html
+
 https://nlp.stanford.edu/projects/glove/
 
 # Build LSTM model to predict insincer questions classification using keras
